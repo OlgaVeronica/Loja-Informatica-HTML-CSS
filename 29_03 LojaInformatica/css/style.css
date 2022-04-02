@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Archivo+Narrow:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background-color: #7A9696;
+}
+
+
+main{
+    margin: 300px;
+    align-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #E1E3E3;
+    padding-bottom: 200px;
+    padding-top: 0px;
+}
+
+.cabecalho{
+    background-color:#3C4A4A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.cabecalho-imagem{
+    height: 72px;
+    margin-left: 0px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 50px;
+}
+.cabecalho-menu-item{
+    font-family: 'Archivo Narrow', sans-serif;
+    color:#E1E3E3;
+    background-color: #3C4A4A;
+    font-size: 25px;
+    font-weight: 80px;
+}
+
+.conteudo-principal {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.conteudo-secundario{
+    padding-left: 50px ;
+}
+
+.conteudo-secundario-lista-imagem{
+    height: 20;
+}
+
+.conteudo-ternario{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: #3C4A4A;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-top: 20px;
+}
+.conteudo-rodape-logo{
+    padding-left: 350px;
+    align-content: center;
+}
+.conteudo-rodape-credito{
+    padding-right: 350px;
+    padding-top: 10px;
+    color:#E1E3E3;
+    font-size: 15px;
+    font-family: 'Archivo Narrow', sans-serif;
+}
