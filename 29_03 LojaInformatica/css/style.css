@@ -57,9 +57,9 @@ main{
 }
 
 .conteudo-principal {
-    padding-top: 43px;
+    padding-top: 45px;
     padding-left: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 
 .conteudo-principal-titulo{
@@ -81,17 +81,23 @@ main{
     padding-bottom: 100px;
     padding-right: 50px;
     padding-top: 50px;
-    
+}
+
+.conteudo-principal-paragrafo{
+    padding-left: 50px;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
 }
 
 .conteudo-secundario{
     padding-left: 50px;
     /* background-color: #B6A3C4; */
-    padding-bottom: 200px;
-    padding-top: 43px;
+    padding-bottom:100px;
+    padding-top: 10px;
 }
 
 .conteudo-secundario-titulo{
+    padding-top: 85px;
     /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 50px;
@@ -109,14 +115,14 @@ main{
     height: 250px;
     float: right;
     padding-right: 50px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .conteudo-ternario{
     padding-left: 50px;
     /* background-color: #C4BFB7; */
     padding-bottom: 200px;
-    padding-top: 43px;
+    padding-top: 45px;
 }
 
 .conteudo-ternario-titulo{
