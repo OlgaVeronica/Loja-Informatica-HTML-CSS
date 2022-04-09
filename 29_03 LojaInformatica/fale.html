@@ -22,33 +22,41 @@
             </div> 
         </nav>
     </header>
-    <div>
-        <h1>Fale Conosco | Olga Informática</h1>
-        <p>Envie uma mensagem preenchendo o formulário abaixo</p>
-    </div>
 
-    <fieldset>
-            <label><strong>Seu nome:</strong></label>
-            <input type="text" name="nome" id="nome" placeholder="ex. Olga Veronica de Andrade Silva">
-            <label>Seu telefone:</label>
-            <input type="text" name="telefone" id="telefone" placeholder="ex. (00)00000-0000">
-            <label>Seu email:</label>
-            <input type="email" name="nome" id="nome" placeholder="ex. seuemail@email.com">
-    </fieldset>
+    <main class="conteudo-principal">
+        <div>
+            <h1 class="conteudo-principal-titulo">Fale Conosco | Olga Informática</h1>
+            <p class="conteudo-principal-subtitulo">Envie uma mensagem preenchendo o formulário abaixo</p>
+        </div>
+        
+        <form action="envie_mensagem.php" method="get">
+            <fieldset>
+                <label><strong>Seu nome:</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="ex. Olga Veronica de Andrade Silva">
+                <label>Seu telefone:</label>
+                <input type="text" name="telefone" id="telefone" placeholder="ex. (00)00000-0000">
+                <label>Seu email:</label>
+                <input type="email" name="nome" id="nome" placeholder="ex. seuemail@email.com">
+            </fieldset>
+            
+            <fieldset>
+                <strong>Deseja receber novidades?</strong>
+                <input type="radio" name="opcao" value="sim">Sim
+                <input type="radio" name="opcao" value="nao">Não
+            </fieldset>
 
-    <fieldset>
-        <label>Deseja receber nossas novidades?</label>
-        <input type="radio" name="sim" value="sim">Sim
-        <input type="radio" name="nao" value="nao">Não
-    </fieldset>
-    <strong>Digite seus comentários no campo abaixo</strong>
-        <textarea name="comentarios" rows="5" colls="42"></textarea>
-    
-        <button><input type="submit" value="Enviar dados"></button>
-        <input type="reset" value="Limpar formulário">
+            <strong>Digite seus comentários no campo abaixo</strong>
+            <textarea name="comentarios" rows="5"></textarea>
+            <div class="botoes">
+                <input type="submit" value="Enviar dados">
+                <input type="reset" value="Limpar formulário">
+            </div>
+        </form>
+    </main>
+
     <footer>
         <a class="conteudo-rodape-logo" href="index.html"><img src="imagens/icons8-meu-computador-50.png"  alt="Logo da loja Olga Informática"></a>
         <p class="conteudo-rodape-credito">© Copyright 2004-2022 Olga Informática, Soluções Inovadoras S.A.</p>
     </footer>
-        
+    
 </body>
