@@ -147,7 +147,7 @@ main{
 .conteudo-quaternario{
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     padding-top: 45px;
 }
 
@@ -197,6 +197,29 @@ tr:hover {background-color: #ddd;}
     padding-top: 10px;
     float: right;
     font-family: 'Lato', sans-serif;
+}
+
+.imagens-ilustrativas{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    gap: 135px;
+    padding-bottom: 100px;
+}
+
+.imagens-ilustrativas>img{
+    border:solid 1px;
+    border-radius: 10px;
+}
+
+.imagens-ilustrativas-titulo{
+    padding-top: 50px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 /* PÁGINA HOME */
 
