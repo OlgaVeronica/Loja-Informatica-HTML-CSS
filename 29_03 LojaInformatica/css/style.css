@@ -31,11 +31,11 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 5px;
+    padding: 7px;
 }
 
 .cabecalho-imagem{
-    height: 72px;
+    height: 80px;
     margin-left: 0px;
 }
 
@@ -48,7 +48,14 @@ main{
     color:white;
     font-size: 25px;
     font-weight: 80px;
+    padding: 20px;
 }
+
+.cabecalho-menu-item:hover{
+    background-color: #911c12;
+}
+
+/* PÁGINA HOME */
 
 .conteudo{
     padding-top: 0px;
@@ -139,6 +146,7 @@ main{
 
 .conteudo-quaternario{
     padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 200px;
     padding-top: 45px;
 }
@@ -160,6 +168,7 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
+
 th {
     text-align: center; 
     padding-top: 12px;
@@ -169,7 +178,6 @@ th {
 }
 
 td, th {
-
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -182,7 +190,7 @@ td, th {
     font-family: 'Lato', sans-serif;
 }
 
-tr:nth-child(even) {background-color: #ffefee}
+tr:nth-child(even) {background-color: #fffafa}
 tr:hover {background-color: #ddd;}
 
 .conteudo-quaternario-tabela-obs{
@@ -190,6 +198,159 @@ tr:hover {background-color: #ddd;}
     float: right;
     font-family: 'Lato', sans-serif;
 }
+/* PÁGINA HOME */
+
+/* PÁGINA FALE CONOSCO  */
+
+.fale-conteudo-primario{
+    margin-right: 300px;
+    margin-left: 300px;
+    padding-top: 50px;
+    font-family:'Lato', sans-serif;
+}
+
+fieldset{
+    border:none;
+}
+
+.dados-pessoais{
+    font-size: 20px;
+    font-family:'Lato', sans-serif;
+}
+
+.dados-pessoais-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-right: 15px;
+}
+
+.dados-pessoais-input{
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.comentario{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.novidades{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.input-novidade{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+textarea{
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family:'Lato', sans-serif;
+    border-style: solid;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    height: 150px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #660B03;
+    border: 1px solid;
+    border-radius: 10px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+      background-color: #911c12 ;
+}
+
+input[type=reset]:hover {
+    background-color: #911c12 ;
+}
+
+.botoes{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+/* PÁGINA FALE CONOSCO */
+
+/* PÁGINA CADASTRO */
+.split-screen{
+    display: flex;
+    gap: 200px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.cadastrar-dados-pessoais{
+    font-family: 'Lato', sans-serif;   
+}
+
+ .cadastrar-div{
+     font-size: 20px;
+     text-align: center;
+}
+
+.cadastrar-input{
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 50px;
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cadastrar-marcacoes{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 70px;
+}
+
+.cadastrar-marcacoes-input{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.botoes-cadastrar{
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+/* PÁGINA CADASTRO */
 
 footer{
     position:relative;
@@ -198,19 +359,22 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    padding-top: 20px; 
+    padding-top: 10px; 
     background-color: #660B03;
     margin-top:auto; 
 }
+
 .conteudo-rodape-logo{
     padding-left: 350px;
     align-content: center;
+    height: 80px;
+    padding-bottom: 10px;
 }
+
 .conteudo-rodape-credito{
     padding-right: 350px;
-    padding-top: 10px;
+    padding-top: 25px;
     color:#E1E3E3;
     font-size: 15px;
     font-family: 'Archivo Narrow', sans-serif;
 }
-

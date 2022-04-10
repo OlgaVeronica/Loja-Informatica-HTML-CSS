@@ -8,12 +8,13 @@
     <meta name="description" content="Loja de Informática, Ji-Paraná - RO"/>
     <meta name="keywords" content="loja, informática, software, hardware" />
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="shortcut icon" href="imagens/OI.png" type="image/x-icon">
     <title>Olga Informática | Cadastro de Usuário</title>
 </head>
 <body>
     <header>
         <nav class="cabecalho">
-            <img class="cabecalho-imagem" src="imagens/icons8-meu-computador-50.png" alt="Logo da loja Olga Informática">
+            <img class="cabecalho-imagem" src="imagens/logotipoolgainformatica.png" alt="Logo da loja Olga Informática">
             <div class="cabecalho-menu">
                 <a class="cabecalho-menu-item" href="index.html">Home</a>
                 <a class="cabecalho-menu-item" href="cadastro.html">Cadastrar</a>
@@ -28,90 +29,170 @@
             <h1 class="conteudo-principal-titulo">Cadastro de Usuário | Olga Informática</h1>
             <p class="conteudo-principal-subtitulo">Preencha com seus dados nos campos abaixo</p>
         </div>
-        
-        <form action="dados_cadastro.php" method="post">
-            
-            
+
+        <form action="dados_cadastro.php" method="post" class="cadastrar-dados-pessoais">
+            <div class="split-screen">
+                <fieldset>
+                    <div class="cadastrar-div">
+                        <label><strong>Nome</strong></label>
+                        <input class="cadastrar-input" type="text" name="nome" class="nome" required placeholder=" ex. Olga Veronica">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Sobrenome</strong></label>
+                        <input class="cadastrar-input" type="text" name="sobrenome" class="sobrenome" required placeholder="ex. de Andrade Silva">
+                    </div>
+                    <br>
+                    
+                    <div class="cadastrar-div">
+                        <label><strong>Sexo</strong></label>
+                        <select class="cadastrar-input" name="sexo" size="1">
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Outro">Não Binárie</option>
+                            <option value="Outro">Outro</option>
+                            <option value="Prefiro não informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Email</strong></label>
+                        <input class="cadastrar-input" type="email" name="nome" class="nome" required placeholder="ex. seuemail@email.com">
+                    </div>
+                
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Telefone</strong></label>
+                        <input class="cadastrar-input" type="text" name="telefone" class="telefone" required placeholder="ex. (00)00000-0000">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Idade</strong></label>
+                        <br>
+                        <input class="cadastrar-input" type="number" name="idade" class="idade" required required placeholder="ex. 18" min="0">
+                    </div>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <div class="cadastrar-div">
+                        <label><strong>Endereço</strong></label>
+                        <input class="cadastrar-input" type="text" name="endereco" class="endereco" required placeholder="ex. Rua da Felicidade">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Número</strong></label>
+                        <input class="cadastrar-input" type="text" name="numero" class="numero" required placeholder="ex. 123">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Complemento</strong></label>
+                        <input class="cadastrar-input" type="text" name="complemento" class="complemento" required placeholder="ex. 1º andar, apt. 12">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Cidade</strong></label>
+                        <input class="cadastrar-input" type="text" name="cidade" class="cidade" required placeholder="ex. Ji-Paraná">
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>Estado</strong></label>
+                        <select class="cadastrar-input" name="estado" size="1">
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espirito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso </option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="cadastrar-div">
+                        <label><strong>CEP</strong></label>
+                        <input class="cadastrar-input" type="text" name="cep" class="cep" required placeholder="ex. 00000-000">
+                    </div>
+                </fieldset>
+            </div>
+            <hr>
+            <fieldset>
+                <div>
+                    <div class="cadastrar-marcacoes">
+                        <label><strong>O que você está achando da Olga informática?</strong></label>
+                        <br>
+                        <div class="cadastrar-marcacoes-input">
+                            <label><input type="radio" name="avaliacao" value="muitobom" checked>Ótimo</label>
+                            <label><input type="radio" name="avaliacao" value="bom">Bom</label>
+                            <label><input type="radio" name="avaliacao" value="regular">Regular</label>
+                            <label><input type="radio" name="avaliacao" value="umlixo">Ruim</label>
+                            <label><input type="radio" name="avaliacao" value="umlixo">Péssimo</label>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="cadastrar-marcacoes">
+                        <label><strong>Marque todos os produtos que te interessam</strong></label>
+                        <br>
+                        <div class="cadastrar-marcacoes-input">
+                            <label><input type="checkbox" name="marcarprodutos" value="placavideo">Placa de Vídeo</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="monitor">Placa de Vídeo</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="teclado">Teclado</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="mouse">Mouse</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="caixassom">Caixa de Som</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="cadeira">Cadeira</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="mousepad">Mousepad</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="headset">Headset</label>
+                            <label><input type="checkbox" name="marcarprodutos" value="microfone">Microfone</label>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="cadastrar-marcacoes">
+                        <label><strong>Marque todos os serviços que te interessam</strong></label>
+                        <br>
+                        <div class="cadastrar-marcacoes-input">
+                            <label><input type="checkbox" name="marcarservicos" value="formatacao">Formatação</label>
+                            <label><input type="checkbox" name="marcarservicos" value="limpezahardware">Limpeza de hardware</label>
+                            <label><input type="checkbox" name="marcarservicos" value="limpezasoftware">Limpeza de software</label>
+                            <label><input type="checkbox" name="marcarservicos" value="instalacaoos">Instalação de Sistema Operacional</label>
+                            <label><input type="checkbox" name="marcarservicos" value="instalacaoprogramas">Instalação de Programas</label>
+                            <label><input type="checkbox" name="marcarservicos" value="trocacomponentes">Troca de componentes</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+            <div class="botoes-cadastrar">
+                <input type="submit" value="Enviar dados">
+                <input type="reset" value="Limpar formulário">
+            </div>
+
         </form>
     </main>
     
     <footer>
-            <a class="conteudo-rodape-logo" href="index.html"><img src="imagens/icons8-meu-computador-50.png"  alt="Logo da loja Olga Informática"></a>
+            <img class="conteudo-rodape-logo" src="imagens/logotipoolgainformatica.png"  alt="Logo da loja Olga Informática">
             <p class="conteudo-rodape-credito">© Copyright 2004-2022 Olga Informática, Soluções Inovadoras S.A.</p>
     </footer>
-
-
-<!--     
-        <fieldset>
-            <legend>Dados Pessoais</legend>
-            <p class="dadospessoais">
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome">
-            </p>
-            <p>
-                <label for="nome">Sobrenome: </label>
-                <input type="text" name="sobrenome" id="sobrenome">
-            </p>
-
-            <strong>Sexo: </strong>
-            <select name="sexo" size="1">
-                <option value="Feminino">Feminino</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Outro">Outro</option>
-                <option value="Prefiro não informar">Prefiro não informar</option>
-            </select>
-
-            
-        </fieldset>
-        
-        <fieldset>
-            <legend>Formulário de Opinião</legend>
-            <strong>O que você achou do site?</strong>
-                <dl>
-                    <dd>
-                        <input type="radio" name="avaliacao" value="muitobom" checked>Muito Bom!
-                        <input type="radio" name="avaliacao" value="bom">Bom
-                        <input type="radio" name="avaliacao" value="regular">Regular
-                        <input type="radio" name="avaliacao" value="umlixo">Um lixo!
-                    </dd>
-                </dl>
-            <p>
-                <strong>Qual seleção você mais gostou?</strong>
-                <dl>
-                    <dd>
-                        <select name="secao" size="1">
-                            <option value="emcartaz">Em cartaz</option>
-                            <option value="trilhasonora">Trilha sonora</option>
-                            <option value="fotos">Galeria de fotos</option>
-                            <option value="outra">Outra</option>
-                        </select>
-                    </dd>
-                </dl>
-            </p>
-            <p>
-                <strong>Digite seus comentários no campo abaixo</strong>
-                <dl>
-                    <dd>
-                        <textarea name="comentarios" rows="5" cols="42"></textarea>
-                    </dd>
-                </dl>
-            </p>
-            <p>
-                <dl>
-                    <dd>
-                        <input type="checkbox" name="novidades" value="nov">Quero receber novidades do site pelo email.
-                    </dd>
-                </dl>
-                </p>
-                <p>
-                <dl>
-                    <dd>
-                        <input type="submit" value="Enviar dados">
-                        <input type="reset" value="Limpar formulário">
-                    </dd>
-                </dl>
-            </p>
-        </fieldset>
-    </form> -->
 </body>
 </html>
